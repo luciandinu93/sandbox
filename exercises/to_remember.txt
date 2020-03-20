@@ -1,0 +1,13 @@
+File Modes:
+* in - Open for input
+* out - Open for output
+* app - Seek to the end before every write
+* ate - Seek to the end immediatly after the open
+* trunc - Truncate the file
+* binary - Do IO operation in binary mode
+
+String stream specific operations:
+* sstream strm - strm is a unbound stringstream. sstream is one of the types defined in the sstream header
+* sstream strm(s) - strm is a sstream that hold a copy of the string s
+* strm.str() - Returns a copy of the string that strm holds
+* strm.str(s) - Copies the string s into strm. Returns void

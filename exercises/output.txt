@@ -1,0 +1,8 @@
+File Modes:
+* in - Open for input
+* out - Open for output
+* app - Seek to the end before every write
+* ate - Seek to the end immediatly after the open
+* trunc - Truncate the file
+* binary - Do IO operation in binary mode
+
