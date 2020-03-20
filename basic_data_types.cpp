@@ -22,22 +22,16 @@ private:
 	float float_element;
 	double double_element;
 public:
-	Input(const string& file_path);
+	Input();
 	void display_input();
  };
 
-Input::Input(const string& file_path) {
-	ifstream inputFile;
-	inputFile.open(file_path);
-	if(inputFile.is_open()) {
-		inputFile >> this->int_element;
-		inputFile >> this->long_element;
-		inputFile >> this->char_element;
-		inputFile >> this->float_element;
-		inputFile >> this->double_element;
-	} else {
-		cerr << "Could not open " << file_path << " file." << endl;
-	}
+Input::Input() {
+	cin >> this->int_element;
+	cin >> this->long_element;
+	cin >> this->char_element;
+	cin >> this->float_element;
+	cin >> this->double_element;
 }
 
 void Input::display_input() {
@@ -50,6 +44,6 @@ void Input::display_input() {
 }
  
  int main() {
-	Input input = Input("input.txt");
+	Input input = Input()
 	input.display_input();
  }
